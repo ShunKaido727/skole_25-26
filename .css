@@ -1,6 +1,6 @@
-body {
-        background-color: darkred;
-    }
-    h1 {
-        color: black;
-    }
+<style>
+a:link {
+  color: black;
+  background-color: darkred;
+  text-decoration: none;
+}
