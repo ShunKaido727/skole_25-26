@@ -15,7 +15,7 @@ let desimaltall = parseInt(binaryNum, 2)
 console.log("Hilde", desimaltall,binaryNum)
 console.log("Tegn:", ch) 
 console.log("ASCII:", asciiCode) 
-console.log("Binært:", binary) 
+console.log("Binært:", binary) */
 const text = "ABC" 
 
 const code0 = text.charCodeAt(9) 
@@ -28,4 +28,4 @@ const code3 = text.charCodeAt(20)
 
 const code4 = text.charCodeAt(18) 
 
-console.log(code0,code1,code2)*/
+console.log(code0,code1,code2)

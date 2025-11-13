@@ -1,0 +1,31 @@
+header {
+  width: 240px;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: 7px solid black;
+}
+body {
+  background-image: url(../bilder/UndyneFight.webp);
+  background-size: cover;
+height: fill;
+}
+.container {
+  display: flex;
+  background-color: rgb(255, 0, 0);
+  padding: 20px #ffffff;
+  margin-top: 300px;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  left: 300px;
+}
+
+.container div {
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 20px;
+  font-size: 24px;
+  width: 75px;
+  height: 75px;
+}
