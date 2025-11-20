@@ -1,0 +1,46 @@
+header {
+
+  width: 240px;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: 7px solid black;
+
+}
+
+button {
+
+  width: 240px;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: 7px solid black;
+
+}
+
+body {
+    text-align: center;
+}
+
+
+button {
+  background-color: #ffffff;
+  border: 7px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  color: black;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+main {
+    margin-top: 500px;
+}

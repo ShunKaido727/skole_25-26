@@ -1,0 +1,32 @@
+header {
+  width: 240px;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: 7px solid black;
+}   
+
+body {
+  background-size: cover;
+height: fill;
+}
+
+.button {
+  background-color: #ffffff;
+  border: 7px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  color: black;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
