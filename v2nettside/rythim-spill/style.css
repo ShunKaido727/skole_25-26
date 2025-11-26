@@ -17,18 +17,17 @@ height: fill;
 .container {
   display: flex;
   background-color: rgb(0, 0, 0);
-  /*border:#ffffff;*/
-  border-style:dotted ;
-  border-width: 20px;
-  margin-top: 340px;
-  margin-left: 662px;
+  border:#ffffff;
+  border-style:solid ;
+  border-width: 10px;
+  margin-top: 310px;
+  margin-left: 650px;
   justify-content: center;
   width: 200px;
   height: 200px;
 }
 
 .container div {
-  background-color: #ffffff;
   margin: 10px;
   padding: 20px;
   font-size: 24px;
@@ -37,13 +36,22 @@ height: fill;
 }
 
 .container2 {
-  display: flex;
-  background-color: rgb(255, 0, 0);
-  border:#ffffff;
-  border-width: 20px;
-  margin-top: 340px;
-  margin-left: 662px;
-  justify-content: center;
-  width: 200px;
-  height: 200px;
+
 }
+/*
+section {
+  background-color: aqua;
+}
+
+nav {
+  background-color: blueviolet;
+}
+*/
+aside {
+  background-color: chartreuse;
+}
+/*
+footer {
+  background-color: brown;
+}
+  */
