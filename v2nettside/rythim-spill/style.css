@@ -7,8 +7,9 @@ header {
 }
 
 body {
-  background-image: url(../bilder/UndyneFight.webp);
+  /*background-image: url(../bilder/UndyneFight.webp);*/
   background-size: cover;
+  background-color: black;
 height: fill;
 }
 
@@ -21,23 +22,26 @@ height: fill;
   border-style:solid ;
   border-width: 10px;
   margin-top: 310px;
-  margin-left: 650px;
-  justify-content: center;
+  margin-left: 42.5%;
   width: 200px;
   height: 200px;
 }
 
 .container div {
-  margin: 10px;
+  margin-top: 25%;
+  margin-left: 24%;
   padding: 20px;
   font-size: 24px;
   width: 75px;
   height: 75px;
 }
 
-.container2 {
-
+canvas {
+  height: 100%;
+  width: 100%;
+  display: block;
 }
+
 /*
 section {
   background-color: aqua;
@@ -47,9 +51,9 @@ nav {
   background-color: blueviolet;
 }
 */
-aside {
+/*aside {
   background-color: chartreuse;
-}
+}*/
 /*
 footer {
   background-color: brown;
