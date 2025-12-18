@@ -14,6 +14,12 @@ document.addEventListener('DOMContentLoaded',function() {
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
+let upRectangle = false
+let downRectangle = false
+let leftRectangle = false
+let rightRectangle = false
+
+
 // White Game Boarder
 ctx.beginPath();
 ctx.lineWidth = "2";
@@ -68,18 +74,85 @@ ctx.fillStyle = "green";
 ctx.rect(144, 85, 10, 10);
 ctx.fill();
 
+// Arrow1
+let arrow1X = 147
+let arrow1Y = 0
+
+function update(){
+arrow1Y+=1.67
+if (arrow1Y>69.5 && upRectangle === true){
+
+} else {
+ if(arrow1Y>82) {
+    
+ }
+ else{
+    ctx.clearRect(arrow1X, arrow1Y-4, 4, 4)
+ctx.beginPath();
+ctx.fillStyle = "yellow";
+ctx.rect(arrow1X, arrow1Y, 4, 4);
+ctx.fill();
+requestAnimationFrame(update);
+ }
+
+}
+}
+update();
+
+
+
+function clearBoxes(box){
+ctx.clearRect(135.5, 73.5, 28, 4)
+ctx.clearRect(135.5, 105, 28, 4)
+ctx.clearRect(132, 77, 4, 28)
+ctx.clearRect(163, 77, 4, 28)
+
+
+if(box === 1){
+upRectangle = true
+downRectangle = false
+leftRectangle = false
+rightRectangle = false
+}
+
+if(box === 2){
+upRectangle = false
+downRectangle = true
+leftRectangle = false
+rightRectangle = false
+}
+
+if(box === 3){
+upRectangle = false
+downRectangle = false
+leftRectangle = true
+rightRectangle = false
+}
+
+if(box === 4){
+upRectangle = false
+downRectangle = false
+leftRectangle = false
+rightRectangle = true
+}
+}
+
 document.addEventListener('keydown', function(event) {
     if(event.keyCode == 87) {
-        alert('W was pressed');
+        clearBoxes(1)
+        up()
     }
     else if(event.keyCode == 83) {
-        alert('S was pressed');
+        clearBoxes(2)
+        down()
     }
     else if(event.keyCode == 65) {
-        alert('A was pressed');
+        clearBoxes(3)
+        left()
     }
     else if(event.keyCode == 68) {
-        alert('D was pressed');
+        clearBoxes(4)
+        right()
     }
 });
 });
