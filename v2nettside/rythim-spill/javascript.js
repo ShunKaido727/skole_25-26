@@ -83,12 +83,18 @@ arrow1Y+=1.67
 if (arrow1Y>69.5 && upRectangle === true){
 
 } else {
- if(arrow1Y>82) {
-    
+ if(arrow1Y>82) { //71
+    arrow1Y
+    ctx.clearRect(arrow1X, arrow1Y-4, 4, 4)
  }
  else{
-    ctx.clearRect(arrow1X, arrow1Y-4, 4, 4)
 ctx.beginPath();
+ctx.lineWidth = "2";
+ctx.strokeStyle = "White";
+ctx.rect(129, 70, 40, 40);
+ctx.stroke();
+ctx.beginPath();
+    ctx.clearRect(arrow1X, arrow1Y-4, 4, 4)
 ctx.fillStyle = "yellow";
 ctx.rect(arrow1X, arrow1Y, 4, 4);
 ctx.fill();
@@ -98,6 +104,8 @@ requestAnimationFrame(update);
 }
 }
 update();
+
+
 
 
 
